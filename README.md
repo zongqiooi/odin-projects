@@ -3,5 +3,6 @@
 Learning web dev 
 
 # Course 1: Foundations 
-## Project 1 (HTML): Recipes 
+1. [Project 1 (HTML): Recipes](https://github.com/zongqiooi/odin-projects/tree/main/odin-recipes)
+  
 
