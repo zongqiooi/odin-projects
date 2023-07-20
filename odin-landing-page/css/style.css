@@ -1,0 +1,157 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth; 
+}
+
+body {
+    margin: 0px; 
+}
+
+#hero {
+    background-color: #1F2937;
+    padding: 10px 300px 50px 300px; 
+}
+
+#quotes {
+    background-color: #E5E7Eb;
+}
+
+.hero-navbar-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0px; 
+}
+
+.hero-content-left {
+    width: 500px; 
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold; 
+    color: #F9FAF8;
+    height: 90px;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #a2a5a8; 
+}
+
+.hero-links {
+    display: flex;
+    gap: 20px; 
+}
+
+a {
+    text-decoration: none;
+    color: #a2a5a8; 
+}
+
+.sign-up-button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 10px 40px; 
+    border: none; 
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.info-all-data {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+    flex-wrap: wrap;
+    padding: 0px 250px; 
+}
+
+.info-title {
+    text-align: center;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bolder;
+}
+
+.info-data p {
+    text-align: center;
+    color: #a2a5a8;
+}
+
+.info-container {
+    padding: 30px 0px 100px 0px; 
+}
+
+.quotes-container {
+    padding: 50px 400px; 
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.quotes-description {
+    font-size: 36px;
+    font-weight: lighter; 
+    color: #1F2937;
+}
+
+.quotes-people {
+    font-weight: bolder;
+}
+
+.aciton-modal {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    gap: 150px; 
+    padding: 30px 150px;
+    border-radius: 12px;
+}
+
+.action-button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 10px 40px; 
+    border: white solid 2px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.action-title {
+    font-weight: bold;
+}
+
+.action-description {
+    color: #d1d4d6;
+}
+
+.action-container {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    padding: 100px 0px; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    padding: 20px 0px; 
+    background-color: #1F2937;
+    color: #a2a5a8;
+}
