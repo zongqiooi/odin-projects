@@ -31,27 +31,32 @@ function game() {
     let computerScore = 0; 
     let round = 0; 
     let buttons = document.querySelectorAll("button"); 
-    
+
     buttons.forEach((button) => {
         button.addEventListener("click", () => {
+            let finalResult = document.querySelector(".final-result");
+            
+            // Game reset when player or computer wins 
+            if (playerScore === 5 || computerScore === 5) {
+                playerScore = 0; 
+                computerScore = 0; 
+                round = 0; 
+                finalResult.textContent = "";
+            }
+
             let playerSelection = button.className; 
             let computerSelection = getComputerChoice(); 
             let result = playRound(playerSelection, computerSelection);
-
             let runningScore = document.querySelector(".running-score"); 
-            let finalResult = document.querySelector(".final-result");
 
-            // if (result === 0) {
-            //     // runningScore.textContent = `Round ${round + 1} result: It is a Draw!`; 
-            // } else 
-            
             if (result === 1) {
-                // runningScore.textContent = `Round ${round + 1} result: Player Wins!`; 
                 playerScore += 1;
             } else if (result === -1) {
-                // runningScore.textContent = `Round ${round + 1} result: Computer Wins!`; 
                 computerScore += 1; 
             }
+            
+            console.log("player score " + playerScore); 
+            console.log("computer score " + computerScore); 
 
             runningScore.textContent = `Player Score: ${playerScore}   Computer Score: ${computerScore}`; 
 
@@ -64,21 +69,6 @@ function game() {
             round += 1; 
         });
     });
-
-    // for (let i = 0; i < 5; i++) {
-        // let playerSelection = getPlayerChoice(); 
-        // let result = playRound(playerSelection, computerSelection); 
-
-        // if (result === 0) {
-        //     console.log(`Round ${i + 1} result: It is a Draw!`); 
-        // } else if (result === 1) {
-        //     console.log(`Round ${i + 1} result: Player Wins!`); 
-        //     playerScore += 1;
-        // } else {
-        //     console.log(`Round ${i + 1} result: Computer Wins!`); 
-        //     computerScore += 1; 
-        // }
-    // }
 }
 
 game(); 
