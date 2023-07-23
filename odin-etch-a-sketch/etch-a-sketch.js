@@ -22,15 +22,24 @@ function generateGrid() {
     let squares = document.querySelectorAll(".square"); 
 
     squares.forEach((square) => {
-        square.addEventListener("mousemove", () => {
-            square.style.backgroundColor = "pink"; 
+        square.addEventListener("mouseenter", () => {
+            let randomR = Math.floor(Math.random() * 255); 
+            let randomG = Math.floor(Math.random() * 255); 
+            let randomB = Math.floor(Math.random() * 255); 
+            square.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`; 
         })
     })
 
     let button = document.querySelector(".generate-button"); 
 
     button.addEventListener("click", () => {
-        squareNum = prompt("Enter the number of squares per side for new grid:"); 
+        let squareInput = 200; 
+
+        while (squareInput < 1 || squareInput > 100) {
+            squareInput = parseInt(prompt("Enter the number of squares per side for new grid (1 to 100):"));
+        }
+            
+        squareNum = squareInput; 
         deletePreviousGrid(); 
         generateGrid(); 
     });
