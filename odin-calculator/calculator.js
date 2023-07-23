@@ -141,6 +141,8 @@ document.addEventListener("keydown", (event) => {
         } else {
             currOperation = name; 
         } 
+    } else if (name === "Backspace") {
+        clear(); 
     }
 }, false);
 

@@ -7,24 +7,34 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body> 
-    <div class="calculator-display"> </div>
-    <button class="1 number">1</button>
-    <button class="2 number">2</button>
-    <button class="3 number">3</button>
-    <button class="4 number">4</button>
-    <button class="5 number">5</button>
-    <button class="6 number">6</button>
-    <button class="7 number">7</button>
-    <button class="8 number">8</button>
-    <button class="9 number">9</button>
-    <button class="0 number">0</button>
-    <button class=". number dot">.</button>
-    <button class="+ plus operator">+</button>
-    <button class="- minus operator">-</button>
-    <button class="* multiply operator">*</button>
-    <button class="/ divide operator">/</button>
-    <button class="= equal operator">=</button>
-    <button class="clear">CLEAR</button>
+    <div class="calculator-wrapper">
+        <div class="calculator-container">
+            <div class="display-wrapper">
+                <div class="calculator-display-cache">xx</div>
+                <div class="calculator-display"></div>
+            </div>
+            <div class="buttons-container">
+                <button class="clear">CLEAR</button>
+                <button class="btn 7 number">7</button>
+                <button class="btn 8 number">8</button>
+                <button class="btn 9 number">9</button>
+                <button class="btn / divide operator">/</button>
+                <button class="btn 4 number">4</button>
+                <button class="btn 5 number">5</button>
+                <button class="btn 6 number">6</button>
+                <button class="btn * multiply operator">*</button>
+                <button class="btn 1 number">1</button>
+                <button class="btn 2 number">2</button>
+                <button class="btn 3 number">3</button>
+                <button class="btn - minus operator">-</button>
+                <button class="btn . number dot">.</button>
+                <button class="btn 0 number">0</button>
+                <button class="btn = equal operator">=</button>
+                <button class="btn + plus operator">+</button>
+            </div>
+        </div>
+    </div>
+
     <script src="./calculator.js"></script>
 </body>
 </html>
