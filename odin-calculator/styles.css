@@ -46,6 +46,10 @@ body {
     background-color: #faa; 
 }
 
+.calculator-display-cache {
+    min-height: 10px;
+}
+
 .calculator-display {
     font-size: 40px;
 }

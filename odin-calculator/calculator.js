@@ -5,6 +5,7 @@ let numbers = document.querySelectorAll(".number");
 let display = document.querySelector(".calculator-display"); 
 let operators = document.querySelectorAll(".operator"); 
 let clearBtn = document.querySelector(".clear"); 
+let displayCache = document.querySelector(".calculator-display-cache"); 
 
 function add(a, b) {
     let total = 0; 
@@ -43,6 +44,7 @@ function clear() {
     currNum = ""; 
     numStack = [];
     currOperation = ""; 
+    displayCache.textContent= ""; 
     display.textContent = ""; 
 }
 
@@ -58,6 +60,7 @@ numbers.forEach((number) => {
 operators.forEach((operator) => {
     operator.addEventListener("click", () => {
         if ((operator.textContent !== "=" && currNum !== "") && numStack.length < 1) {
+            displayCache.textContent = `${currNum} ${operator.textContent}`;
             numStack.push(parseFloat(currNum)); 
             currNum = ""; 
             currOperation = operator.textContent; 
@@ -75,6 +78,7 @@ operators.forEach((operator) => {
                 numStack = [];
                 currOperation = "";  
             } else {
+                displayCache.textContent = `${a} ${currOperation} ${b}`; 
                 result = operate(currOperation, a, b);
                 numStack.push(parseFloat(result)); 
 
@@ -108,6 +112,7 @@ document.addEventListener("keydown", (event) => {
         display.textContent = currNum; 
     } else if (name === "+" || name === "-" || name === "*" || name === "/" || name === "=" || name === "Enter") {
         if ((name !== "=" && currNum !== "") && numStack.length < 1) {
+            displayCache.textContent = `${currNum} ${name}`;
             numStack.push(parseFloat(currNum)); 
             currNum = ""; 
             currOperation = name; 
@@ -125,6 +130,7 @@ document.addEventListener("keydown", (event) => {
                 numStack = [];
                 currOperation = "";  
             } else {
+                displayCache.textContent = `${a} ${currOperation} ${b}`; 
                 result = operate(currOperation, a, b);
                 numStack.push(parseFloat(result)); 
 
