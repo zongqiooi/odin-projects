@@ -1,8 +1,6 @@
 # Odin Projects
 
-Learning web dev
-
-Tech stack involved: 
+Tech stacks involved: 
 1) HTML
 2) CSS 
 3) JavaScript 
@@ -14,4 +12,6 @@ Tech stack involved:
 1. [Project 1 (HTML): Recipes](https://github.com/zongqiooi/odin-projects/tree/main/odin-recipes)
 2. [Project 2 (CSS): Landing Page](https://github.com/zongqiooi/odin-projects/tree/main/odin-landing-page)
 3. [Project 3 (JavaScript): Rock Paper Scissors](https://github.com/zongqiooi/odin-projects/tree/main/odin-rock-paper-scissors)
+4. [Project 4 (JavaScript): Etch-a-Sketch](https://github.com/zongqiooi/odin-projects/tree/main/odin-etch-a-sketch)
+
 
