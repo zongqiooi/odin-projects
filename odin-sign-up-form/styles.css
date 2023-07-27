@@ -1,0 +1,147 @@
+body {
+    margin: 0px; 
+    padding: 0px; 
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: odin-custom-font;
+    src: url(./Norse-Bold.otf);
+}
+
+.logo {
+    font-family: odin-custom-font, sans-serif;
+    color: white;
+    font-size: 80px;
+}
+
+.banner {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 150px; 
+    flex: 1; 
+    width: 550px;
+    height: 120px; 
+}
+
+.left {
+    display: flex;
+}
+
+.banner img {
+    height: 100px; 
+}
+
+.container {
+    display: flex;
+}
+
+.background-img {
+    height: 100vh;
+    width: 550px;
+}
+
+.banner-foot {
+    font-size: 12px;
+    position: absolute;
+    top: 95%; 
+    left: 200px; 
+    color: rgb(206, 206, 206); 
+}
+
+button {
+    background-color: #596D48; 
+    color: white; 
+    padding: 10px 40px; 
+    border-radius: 8px;
+    border-style: none;
+    font-weight: bold;
+    margin: 30px 0px 30px 50px; 
+}
+
+span {
+    font-weight: bold;
+    color: #596D48;
+}
+
+.top {
+    height: 30%; 
+    background-color: #F9FAFB;
+}
+
+.middle {
+    height: 40%; 
+}
+
+.btm {
+    height: 30%;    
+    background-color: #F9FAFB;
+}
+
+.right p {
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 0px; 
+}
+
+.middle-text-container, 
+.top-text-container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.top-header {
+    width: 90%; 
+    margin-bottom: 30px;
+}
+
+p.text-account {
+    font-weight: normal;
+}
+
+.btm {
+    box-shadow: 10px 10px 10px 10px grey;
+}
+
+.mid-forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 20px; 
+    margin-left: -17px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input {
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray; 
+    background-color: rgb(255, 255, 255);
+    padding: 5px 0px 5px 10px; 
+}
+
+input:focus {
+    outline: none !important;
+    border-color: blue;
+}
+
+.error-message {
+    font-size: 8px;
+    color: red;
+    position: absolute;
+    top: 480px;
+    left: 545px;     
+    display: none; 
+}
