@@ -1,15 +1,15 @@
 let password = document.querySelector("#password"); 
-let confirmPassword = document.querySelector("#confirm-password"); 
+let confirmPassword = document.querySelector("#confirm_password"); 
 let errorMessage = document.querySelector(".error-message"); 
 
-console.log("this is password"); 
-console.log(password); 
-console.log("this is password content"); 
-console.log(password.textContent);
-if (password.name && confirmPassword.name) {
-    if (password !== confirmPassword) {
+confirmPassword.addEventListener("keyup", () => {
+    console.log(password.value); 
+    console.log(confirmPassword.value); 
+
+    if (password.value !== confirmPassword.value) {
         errorMessage.style.display = "block"; 
     } else {
         errorMessage.style.display = "none"; 
     }
-}
+});
+
