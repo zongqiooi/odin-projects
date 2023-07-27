@@ -62,7 +62,7 @@ button {
     margin: 30px 0px 30px 50px; 
 }
 
-span {
+span.log-in {
     font-weight: bold;
     color: #596D48;
 }
@@ -144,4 +144,8 @@ input:focus {
     top: 480px;
     left: 545px;     
     display: none; 
+}
+
+span.author {
+    text-decoration: underline;
 }
