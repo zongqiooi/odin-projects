@@ -14,7 +14,12 @@ Tech stacks involved:
 3. [Project 3 (JavaScript): Rock Paper Scissors](https://github.com/zongqiooi/odin-projects/tree/main/odin-rock-paper-scissors)
 4. [Project 4 (JavaScript): Etch-a-Sketch](https://github.com/zongqiooi/odin-projects/tree/main/odin-etch-a-sketch)
 5. [Project 5 (HTML, CSS, JavaScript): Calculator](https://github.com/zongqiooi/odin-projects/tree/main/odin-calculator)
-6. [Project 6 (Intermediate HTML): Sign-up Form](https://github.com/zongqiooi/odin-projects/tree/main/odin-sign-up-form)
-7. [Project 7 (Intermediate CSS): Admin Dashboard](https://github.com/zongqiooi/odin-projects/tree/main/odin-admin-dashboard)
+  
+# Course 2: Intermediate HTML and CSS
+1. [Project 6 (Intermediate HTML): Sign-up Form](https://github.com/zongqiooi/odin-projects/tree/main/odin-sign-up-form)
+2. [Project 7 (Intermediate CSS): Admin Dashboard](https://github.com/zongqiooi/odin-projects/tree/main/odin-admin-dashboard)
+  
+# Course 3: JavaScript 
+1. [Project 8 (JavaScript): Library](https://github.com/zongqiooi/odin-projects/tree/main/odin-library)
 
 
