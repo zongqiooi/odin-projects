@@ -49,7 +49,7 @@ body {
     gap: 40px; 
     width: 1000px;
     margin: 0 auto; 
-    margin-top: 60px; 
+    margin-top: 80px; 
 }
 
 .book-card {
@@ -80,8 +80,9 @@ svg {
     border-radius: 8px;
     border: none;
     margin: 0 auto; 
-    margin-top: 40px; 
     cursor: pointer;
+    position: relative;
+    top: 40px; 
 }
 
 button:hover {
@@ -106,4 +107,70 @@ button {
 
 .card-buttons-group button {
     width: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px; 
+}
+
+.modal { 
+    position: fixed;
+    bottom: 25%;
+    left: 43%;
+    z-index: 1;
+    width: 200px;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #f0eef1; 
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+
+.form-container > * {
+    width: 100%;
+}
+
+.submit-btn {
+    background-color: #9fff9c; 
+}
+
+.form-container p {
+    font-size: 15px;
+    display: inline;
+}
+
+.input {
+    width: 90%;
+    padding: 10px; 
+    border-radius: 8px;
+    border: none;
+}
+
+.terms-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+input.checkbox {
+    width: 20%;
+    height: 20%;
+}
+
+.form-container h3 {
+    font-size: 20px; 
+    margin: 0px; 
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
 }

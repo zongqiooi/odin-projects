@@ -11,10 +11,12 @@ function addBookToLibrary() {
     let book = new Book("Harry Potter", "zongqiooi", "1000", true);
     let bookOne = new Book("Wassup", "zongqiooi", "1000", true);
     let bookTwo = new Book("Yoyoyo", "zongqiooi", "1000", true);
+    let bookThr = new Book("Yoyoyo", "zongqiooi", "1000", true);
 
     myLibrary.push(book);
     myLibrary.push(bookOne);
     myLibrary.push(bookTwo);
+    myLibrary.push(bookThr);
 }
 
 let booksContainer = document.querySelector(".books-grid"); 
@@ -65,4 +67,10 @@ buttonGroups.forEach((buttonGroup) => {
         readButton.textContent = (buttonText === "Read") ? "Not Read":"Read"; 
         
     });
+
+    let removeButton = buttonGroup.lastChild; 
+    removeButton.addEventListener("click", (event) => {
+        console.log("this is my event!!!"); 
+        console.log(event); 
+    })
 }); 
