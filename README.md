@@ -23,3 +23,5 @@ Tech stacks involved:
 1. [Project 8 (JavaScript): Library](https://github.com/zongqiooi/odin-projects/tree/main/odin-library) => Learned about overlay and position: fixed
 
 
+6. [Project 13 (JavaScript): Recursion](https://github.com/zongqiooi/odin-projects/tree/main/odin-recursion)
+
