@@ -20,6 +20,6 @@ Tech stacks involved:
 2. [Project 7 (Intermediate CSS): Admin Dashboard](https://github.com/zongqiooi/odin-projects/tree/main/odin-admin-dashboard)
   
 # Course 3: JavaScript 
-1. [Project 8 (JavaScript): Library](https://github.com/zongqiooi/odin-projects/tree/main/odin-library)
+1. [Project 8 (JavaScript): Library](https://github.com/zongqiooi/odin-projects/tree/main/odin-library) => Learned about overlay and position: fixed
 
 
