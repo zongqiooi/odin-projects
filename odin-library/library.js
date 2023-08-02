@@ -9,7 +9,6 @@ function Book(title, author, pages, read, id) {
 }
 
 Book.prototype.toggleRead = function() {
-    console.log("wtfff"); 
     this.read = !this.read; 
 }
 
