@@ -12,12 +12,35 @@ function addBookToLibrary() {
     let bookOne = new Book("Wassup", "zongqiooi", "1000", true);
     let bookTwo = new Book("Yoyoyo", "zongqiooi", "1000", true);
     let bookThr = new Book("Yoyoyo", "zongqiooi", "1000", true);
+    let bookFour = new Book("Yoyoyo", "zongqiooi", "1000", true);
+    let bookFive = new Book("Yoyoyo", "zongqiooi", "1000", true);
+    let bookSix = new Book("Yoyoyo", "zongqiooi", "1000", true);
 
     myLibrary.push(book);
     myLibrary.push(bookOne);
     myLibrary.push(bookTwo);
     myLibrary.push(bookThr);
+    myLibrary.push(bookFour);
+    myLibrary.push(bookFive);
+    myLibrary.push(bookSix);
 }
+
+function testAddNewBookToLibrary() {
+
+}
+
+let submitButton = document.querySelector(".submit-btn"); 
+
+submitButton.addEventListener("click", (event) => {
+    event.preventDefault(); 
+    const formData = new FormData(event.target);
+    const formProps = Object.fromEntries(formData);
+
+    console.log(formData);
+    console.log(formProps); 
+    
+    testAddNewBookToLibrary(); 
+}); 
 
 let booksContainer = document.querySelector(".books-grid"); 
 
@@ -74,3 +97,23 @@ buttonGroups.forEach((buttonGroup) => {
         console.log(event); 
     })
 }); 
+
+let cross = document.querySelector(".cross-button"); 
+let modal = document.querySelector(".modal"); 
+let overlay = document.querySelector(".overlay"); 
+let newBookButton = document.querySelector(".add-book-button"); 
+
+newBookButton.addEventListener("click", () => {
+    modal.classList.add("modal-active");
+    modal.classList.remove("hide");
+    overlay.classList.add("overlay-active"); 
+    overlay.classList.remove("hide"); 
+    cross.classList.add("cross-active"); 
+    cross.classList.remove("hide"); 
+}); 
+
+cross.addEventListener("click", () => {
+    modal.classList.add("hide"); 
+    overlay.classList.add("hide"); 
+    cross.classList.add("hide"); 
+});
