@@ -21,6 +21,7 @@ Tech stacks involved:
   
 # Course 3: JavaScript 
 1. [Project 8 (JavaScript): Library](https://github.com/zongqiooi/odin-projects/tree/main/odin-library) => Learned about overlay and position: fixed
+2. [Project 9 (JavaScript): Tic Tac Toe](https://github.com/zongqiooi/odin-projects/tree/main/odin-tic-tac-toe)
 
 
 6. [Project 13 (JavaScript): Recursion](https://github.com/zongqiooi/odin-projects/tree/main/odin-recursion)
