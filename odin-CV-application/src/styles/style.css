@@ -52,3 +52,14 @@ body {
   justify-content: space-evenly;
   height: 50px;
 }
+
+.resume-flex-box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.general-information-container {
+  width: 300px;
+}
