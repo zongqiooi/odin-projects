@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/style.css";
 
 const Education = ({ schoolName, titleStudy, startDate, endDate }) => {

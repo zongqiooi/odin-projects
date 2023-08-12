@@ -1,5 +1,6 @@
 import "../styles/style.css";
 import { useState } from "react";
+import InputField from "./InputField";
 
 const InputForm = ({
   setNameCallback,
@@ -28,43 +29,24 @@ const InputForm = ({
     <div className="form-container">
       <div className="section-container">
         <form action="">
-          <div className="input-container">
-            <label className="input-label">Name:</label>
-            <input
-              onChange={(event) => {
-                setName(event.target.value);
-                setNameCallback(event.target.value);
-              }}
-              type="text"
-              className="input-field"
-              value={name}
-            ></input>
-          </div>
-
-          <div className="input-container">
-            <label className="input-label">Email:</label>
-            <input
-              onChange={(event) => {
-                setEmail(event.target.value);
-                setEmailCallback(event.target.value);
-              }}
-              type="text"
-              className="input-field"
-              value={email}
-            ></input>
-          </div>
-          <div className="input-container">
-            <label className="input-label">Phone number:</label>
-            <input
-              onChange={(event) => {
-                setPhoneNumber(event.target.value);
-                setPhoneNumberCallback(event.target.value);
-              }}
-              type="text"
-              className="input-field"
-              value={phoneNumber}
-            ></input>
-          </div>
+          <InputField
+            inputLabel={"Name:"}
+            input={name}
+            setState={setName}
+            setStateCallback={setNameCallback}
+          />
+          <InputField
+            inputLabel={"Email:"}
+            input={email}
+            setState={setEmail}
+            setStateCallback={setEmailCallback}
+          />
+          <InputField
+            inputLabel={"Phone number:"}
+            input={phoneNumber}
+            setState={setPhoneNumber}
+            setStateCallback={setPhoneNumberCallback}
+          />
         </form>
       </div>
 
