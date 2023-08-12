@@ -6,6 +6,7 @@ const InputForm = ({
   setEmailCallback,
   setPhoneNumberCallback,
   setEducationCallback,
+  setWorkCallback,
 }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,6 +16,12 @@ const InputForm = ({
     titleStudy: "",
     startDate: "",
     endDate: "",
+  });
+  const [work, setWork] = useState({
+    companyName: "",
+    positionTitle: "",
+    responsibilities: "",
+    workPeriod: "",
   });
 
   return (
@@ -110,6 +117,72 @@ const InputForm = ({
               type="text"
               className="input-field"
               value={education.endDate}
+            ></input>
+          </div>
+        </form>
+      </div>
+
+      <div className="section-container">
+        <form action="">
+          <div className="input-container">
+            <label className="input-label">Company Name:</label>
+            <input
+              onChange={(event) => {
+                setWork({ ...work, companyName: event.target.value });
+                setWorkCallback("companyName", event.target.value);
+              }}
+              type="text"
+              className="input-field"
+              value={work.companyName}
+            ></input>
+          </div>
+
+          <div className="input-container">
+            <label className="input-label">Position Title:</label>
+            <input
+              onChange={(event) => {
+                setWork({ ...work, positionTitle: event.target.value });
+                setWorkCallback("positionTitle", event.target.value);
+              }}
+              type="text"
+              className="input-field"
+              value={work.positionTitle}
+            ></input>
+          </div>
+          <div className="input-container">
+            <label className="input-label">Main Responsibilities:</label>
+            <input
+              onChange={(event) => {
+                setWork({ ...work, responsibilities: event.target.value });
+                setWorkCallback("responsibilities", event.target.value);
+              }}
+              type="text"
+              className="input-field"
+              value={work.responsibilities}
+            ></input>
+          </div>
+          <div className="input-container">
+            <label className="input-label">Start Date of Work:</label>
+            <input
+              onChange={(event) => {
+                setWork({ ...work, startDate: event.target.value });
+                setWorkCallback("startDate", event.target.value);
+              }}
+              type="text"
+              className="input-field"
+              value={work.startDate}
+            ></input>
+          </div>
+          <div className="input-container">
+            <label className="input-label">End Date of Work:</label>
+            <input
+              onChange={(event) => {
+                setWork({ ...work, endDate: event.target.value });
+                setWorkCallback("endDate", event.target.value);
+              }}
+              type="text"
+              className="input-field"
+              value={work.endDate}
             ></input>
           </div>
         </form>

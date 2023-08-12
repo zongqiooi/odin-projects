@@ -13,6 +13,12 @@ function App() {
     startDate: "",
     endDate: "",
   });
+  const [work, setWork] = useState({
+    companyName: "",
+    positionTitle: "",
+    responsibilities: "",
+    workPeriod: "",
+  });
 
   const handleName = (childData) => {
     setName(childData);
@@ -38,6 +44,20 @@ function App() {
     }
   };
 
+  const handleWork = (type, childData) => {
+    if (type === "companyName") {
+      setWork({ ...work, companyName: childData });
+    } else if (type === "positionTitle") {
+      setWork({ ...work, positionTitle: childData });
+    } else if (type === "responsibilities") {
+      setWork({ ...work, responsibilities: childData });
+    } else if (type === "startDate") {
+      setWork({ ...work, startDate: childData });
+    } else if (type === "endDate") {
+      setWork({ ...work, endDate: childData });
+    }
+  };
+
   return (
     <div className="grid-container">
       <InputForm
@@ -47,12 +67,14 @@ function App() {
         setEducationCallback={(type, childData) =>
           handleEducation(type, childData)
         }
+        setWorkCallback={(type, childData) => handleWork(type, childData)}
       ></InputForm>
       <Resume
         name={name}
         email={email}
         phoneNumber={phoneNumber}
         education={education}
+        work={work}
       ></Resume>
     </div>
   );

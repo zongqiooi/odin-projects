@@ -1,32 +1,25 @@
 import "../styles/style.css";
 import Education from "./Education";
+import GeneralInformation from "./GeneralInformation";
+import WorkExperience from "./WorkExperience";
 
-const Resume = ({ name, email, phoneNumber, education }) => {
+const Resume = ({ name, email, phoneNumber, education, work }) => {
   return (
     <div className="resume-container">
-      <div className="general-information-container">
-        <h3>General Information</h3>
-        <div className="resume-flex-box-container">
-          <div>Name: {name}</div>
-          <div>Email: {email}</div>
-          <div>Phone number: {phoneNumber}</div>
-        </div>
-      </div>
+      <GeneralInformation name={name} email={email} phoneNumber={phoneNumber} />
       <Education
         schoolName={education.schoolName}
         titleStudy={education.titleStudy}
         startDate={education.startDate}
         endDate={education.endDate}
       />
-      <div className="work-experience-container">
-        <h3>Work Experience</h3>
-        <div className="resume-flex-box-container">
-          <div>Company Name: </div>
-          <div>Position Title: </div>
-          <div>Main Responsibilities: </div>
-          <div>Work Period: </div>
-        </div>
-      </div>
+      <WorkExperience
+        companyName={work.companyName}
+        positionTitle={work.positionTitle}
+        responsibilities={work.responsibilities}
+        startDate={work.startDate}
+        endDate={work.endDate}
+      />
     </div>
   );
 };
