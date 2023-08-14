@@ -5,7 +5,7 @@ const Card = ({ dogImage, handleClickCallback }) => {
   return (
     <div className="card">
       <img
-        onClick={handleClickCallback}
+        onClick={() => handleClickCallback(dogImage)}
         src={dogImage}
         alt="golden-retriever"
         width={"200px"}

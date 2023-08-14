@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 import Card from "./Card";
 import { useEffect, useState } from "react";
 
-const CardContainer = () => {
+const CardContainer = ({ handleScoreCallback }) => {
   const [dogImages, setDogImages] = useState([]);
+  const [clickedDogs, setClickedDogs] = useState([]);
 
   useEffect(() => {
     fetch("https://dog.ceo/api/breed/retriever/golden/images", { mode: "cors" })
@@ -11,10 +13,24 @@ const CardContainer = () => {
       .catch((error) => console.error(error));
   }, []);
 
-  const handleClick = () => {
+  const checkClickedDuplicates = (dogImage) => {
+    for (let i = 0; i < clickedDogs.length; i++) {
+      if (clickedDogs[i] === dogImage) {
+        return true;
+      }
+    }
+    return false;
+  };
+
+  const handleClickCallback = (dogImage) => {
     let newDogImages = [...dogImages];
     let shuffledDogImages = newDogImages.sort(() => Math.random() - 0.5);
+    let duplicatedClick = null;
+
+    duplicatedClick = checkClickedDuplicates(dogImage);
+    setClickedDogs(duplicatedClick === true ? [] : [...clickedDogs, dogImage]);
     setDogImages(shuffledDogImages);
+    handleScoreCallback(duplicatedClick);
   };
 
   return (
@@ -22,7 +38,7 @@ const CardContainer = () => {
       {dogImages.map((dogImage) => (
         <Card
           key={dogImage}
-          handleClickCallback={handleClick}
+          handleClickCallback={() => handleClickCallback(dogImage)}
           dogImage={dogImage}
         />
       ))}

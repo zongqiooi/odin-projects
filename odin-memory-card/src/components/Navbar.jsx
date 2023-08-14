@@ -1,12 +1,13 @@
+/* eslint-disable react/prop-types */
 import "../styles/style.css";
 import Scoreboard from "./Scoreboard";
 import Title from "./Title";
 
-const Navbar = () => {
+const Navbar = ({ currScore, bestScore }) => {
   return (
     <div className="navbar-container">
       <Title />
-      <Scoreboard />
+      <Scoreboard currScore={currScore} bestScore={bestScore} />
     </div>
   );
 };
