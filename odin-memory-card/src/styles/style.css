@@ -1,0 +1,34 @@
+body {
+  margin: 0px;
+  background-color: #f3f4f6;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.text-title {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.text-instruction {
+  font-size: 0.75rem;
+}
+
+.text-scoreboard {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.text-score {
+  font-size: 0.75rem;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
