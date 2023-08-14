@@ -33,4 +33,5 @@ Tech stacks involved:
 
 # Course 5: React
 
-1. [Project 20 (React): CV Application](https://github.com/zongqiooi/odin-projects/tree/main/odin-CV-application)
+1. [Project 20 (React - useState and Props): CV Application](https://github.com/zongqiooi/odin-projects/tree/main/odin-CV-application)
+2. [Project 21 (React - useEffect and API): Memory Card](https://github.com/zongqiooi/odin-projects/tree/main/odin-memory-card)
