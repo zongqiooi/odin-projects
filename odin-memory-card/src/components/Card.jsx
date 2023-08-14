@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
+import "../styles/style.css";
 
-const Card = ({ dogImage }) => {
+const Card = ({ dogImage, handleClickCallback }) => {
   return (
-    <div>
+    <div className="card">
       <img
+        onClick={handleClickCallback}
         src={dogImage}
         alt="golden-retriever"
         width={"200px"}

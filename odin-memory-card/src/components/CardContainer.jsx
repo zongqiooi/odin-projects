@@ -11,10 +11,20 @@ const CardContainer = () => {
       .catch((error) => console.error(error));
   }, []);
 
+  const handleClick = () => {
+    let newDogImages = [...dogImages];
+    let shuffledDogImages = newDogImages.sort(() => Math.random() - 0.5);
+    setDogImages(shuffledDogImages);
+  };
+
   return (
     <div className="card-container">
       {dogImages.map((dogImage) => (
-        <Card key={dogImage} dogImage={dogImage} />
+        <Card
+          key={dogImage}
+          handleClickCallback={handleClick}
+          dogImage={dogImage}
+        />
       ))}
     </div>
   );
