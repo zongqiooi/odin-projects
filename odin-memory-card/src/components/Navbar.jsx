@@ -1,7 +1,6 @@
-import React from "react";
-import Title from "./Title";
-import Scoreboard from "./Scoreboard";
 import "../styles/style.css";
+import Scoreboard from "./Scoreboard";
+import Title from "./Title";
 
 const Navbar = () => {
   return (
