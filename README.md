@@ -27,7 +27,9 @@ Tech stacks involved:
 1. [Project 8 (JavaScript - Objects, Object Constructors, and Prototypes): Library](https://github.com/zongqiooi/odin-projects/tree/main/odin-library) => Learned about overlay and position: fixed
 2. [Project 9 (JavaScript - Factory Functions and Module Pattern): Tic Tac Toe](https://github.com/zongqiooi/odin-projects/tree/main/odin-tic-tac-toe)
 3. [Project 10 (JavaScript - Webpack): Restaurant Page](https://github.com/zongqiooi/odin-projects/tree/main/odin-restaurant-page)
-4. [Project 13 (JavaScript): Recursion](https://github.com/zongqiooi/odin-projects/tree/main/odin-recursion)
+4. [Project 13 (JavaScript - DSA): Recursion](https://github.com/zongqiooi/odin-projects/tree/main/odin-recursion)
+5. [Project 14 (JavaScript - Unit Testing with Jest): Testing Practice](https://github.com/zongqiooi/odin-projects/tree/main/odin-testing-practice)
+6. [Project 15 (JavaScript): Battleship](https://github.com/zongqiooi/odin-projects/tree/main/odin-battleship)
 
 # Course 4: Advanced HTML and CSS
 
