@@ -14,6 +14,10 @@ it("Reversing 'ashleynguci' to 'icugnyelhsa'", () => {
   expect(reverseString("ashleynguci")).toEqual("icugnyelhsa");
 });
 
+it("Reversing 123 to 'Not a number'", () => {
+  expect(reverseString(123)).toEqual("Not a string!");
+});
+
 it("Adding 6 + 4 to 10 ", () => {
   expect(calculator.add(4, 6)).toEqual(10);
 });
