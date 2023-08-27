@@ -4,10 +4,11 @@ Tech stacks involved:
 
 1. HTML, CSS, JavaScript (Foundations, Intermediate, Advanced)
 2. React.js
-3. Node.js
-4. MongoDB
+3. Node.js, Express.js
+4. MongoDB, Mongoose
 5. Jest
 6. Git
+7. API
 
 # Course 1: Foundations
 
@@ -31,13 +32,12 @@ Tech stacks involved:
 5. [Project 14 (JavaScript - Unit Testing with Jest): Testing Practice](https://github.com/zongqiooi/odin-projects/tree/main/odin-testing-practice)
 6. [Project 15 (JavaScript): Battleship](https://github.com/zongqiooi/odin-projects/tree/main/odin-battleship)
 
-# Course 4: Advanced HTML and CSS
-
-# Course 5: React
+# Course 4: React
 
 1. [Project 20 (React - useState() hook and Props): CV Application](https://github.com/zongqiooi/odin-projects/tree/main/odin-CV-application)
 2. [Project 21 (React - useEffect() hook and API): Memory Card](https://github.com/zongqiooi/odin-projects/tree/main/odin-memory-card)
 
-# Course 6: NodeJS
+# Course 5: NodeJS
 
 1. [Project 23 (NodeJS - createServer and fileSystem): Basic Informational Site](https://github.com/zongqiooi/odin-projects/tree/main/odin-basic-informational-site)
+2. [Project 24 (NodeJS): Mini Message Board](https://github.com/zongqiooi/odin-projects/tree/main/odin-mini-message-board)
