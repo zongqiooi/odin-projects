@@ -37,3 +37,7 @@ Tech stacks involved:
 
 1. [Project 20 (React - useState() hook and Props): CV Application](https://github.com/zongqiooi/odin-projects/tree/main/odin-CV-application)
 2. [Project 21 (React - useEffect() hook and API): Memory Card](https://github.com/zongqiooi/odin-projects/tree/main/odin-memory-card)
+
+# Course 6: NodeJS
+
+1. [Project 23 (NodeJS - createServer and fileSystem): Basic Informational Site](https://github.com/zongqiooi/odin-projects/tree/main/odin-basic-informational-site)
