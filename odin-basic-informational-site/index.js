@@ -15,11 +15,11 @@ app.get("/contact-me", (req, res) => {
   res.sendFile(__dirname + "/contact-me.html");
 });
 
-app.get("*", function (req, res) {
+app.get("*", (req, res) => {
   res.status(404).sendFile(__dirname + "/404.html");
 });
 
-app.listen(PORT, function (err) {
+app.listen(PORT, (err) => {
   if (err) console.log(err);
   console.log("Server listening on PORT", PORT);
 });
