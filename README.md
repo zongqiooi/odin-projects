@@ -2,12 +2,12 @@
 
 Tech stacks involved:
 
-1. HTML
-2. CSS
-3. JavaScript
-4. Jest
-5. Node.js
-6. React.js
+1. HTML, CSS, JavaScript (Foundations, Intermediate, Advanced)
+2. React.js
+3. Node.js
+4. MongoDB
+5. Jest
+6. Git
 
 # Course 1: Foundations
 
