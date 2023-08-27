@@ -39,5 +39,5 @@ Tech stacks involved:
 
 # Course 5: NodeJS
 
-1. [Project 23 (NodeJS - createServer and fileSystem): Basic Informational Site](https://github.com/zongqiooi/odin-projects/tree/main/odin-basic-informational-site)
-2. [Project 24 (NodeJS): Mini Message Board](https://github.com/zongqiooi/odin-projects/tree/main/odin-mini-message-board)
+1. [Project 23 (NodeJS - Creating Server and File System): Basic Informational Site](https://github.com/zongqiooi/odin-projects/tree/main/odin-basic-informational-site)
+2. [Project 24 (NodeJS - Page Routing, Form, and POST method): Mini Message Board](https://github.com/zongqiooi/odin-projects/tree/main/odin-mini-message-board)

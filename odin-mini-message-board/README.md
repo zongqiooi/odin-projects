@@ -1,3 +1,3 @@
-# Project 23 (NodeJS - Creating Server and File System): Basic Informational Site
+# Project 24 (NodeJS - Page Routing, Form, and POST method): Mini Message Board
 
 This is the submission files for the project built for Introduction to NodeJS lesson in NodeJS course.
